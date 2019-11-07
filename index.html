@@ -2,14 +2,26 @@
 <html>
   <head>
     <style>
-      /* visited link */
-a:visited {
-  color: black;
+     ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
 }
 
-/* mouse over link */
-a:hover {
-  color: gray;
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
 
 </style>
       
@@ -22,8 +34,13 @@ a:hover {
   <h1>
     <img src="MS.jpg" width="180" height="133">
   </h1>
-      <p><b><a href="default.asp" target="_blank">Home</a></b></p>
-      
+      <ul>
+  <li><a class="active" href="#home">Home</a></li>
+  <li><a href="#news">Portfolio</a></li>
+  <li><a href="#contact">Contact</a></li>
+  <li><a href="#about">About</a></li>
+</ul>
+
     </center>
      
                                                                                                     
