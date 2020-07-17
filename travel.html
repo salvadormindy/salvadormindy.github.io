@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<title>Travel Diary</title>
+<title>Blog</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="style.css">
 <body>
@@ -12,59 +12,37 @@
 </br>
 </h1>
 
-<a href="about.html"><button class="btn about">About</button></a>
-<a href="travel.html"><button class="btn travel diary">Travel Diary</button></a>
-<a href="index.html"><button class="btn portfolio">Portfolio</button></a>
-<a href="contact.html"><button class="btn contact">Contact</button></a>
-<center>
+<!-- The four columns -->
+<div class="row">
+  <div class="column">
+    <img src="Cebu1.jpg" alt="Cebu" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="ny1.jpg" alt="NYC" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="arizona.jpg" alt="Cactus" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="biloxi.jpg" alt="Girl" style="width:100%" onclick="myFunction(this);">
+  </div>
+</div>
 
-</center>
-  <p>
-  <center>
-    <h1 style="font-family:Mina;">Travel Diary</h1>
-    </p>
-    </center>
+<div class="container">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <img id="expandedImg" style="width:100%">
+  <div id="imgtext"></div>
+</div>
 
-  <div class="responsive">
-    <div class="gallery">
-  <a href="cebu.html">
-        <img src="Cebu1.jpg" alt="Cebu" width="600" height="400">
-      </a>
-      <p>
-      <div class="desc">Cebu, PH 2019</div>
-    </p>
-    </div>
-  </div>
+<script>
+function myFunction(imgs) {
+  var expandImg = document.getElementById("expandedImg");
+  var imgText = document.getElementById("imgtext");
+  expandImg.src = imgs.src;
+  imgText.innerHTML = imgs.alt;
+  expandImg.parentElement.style.display = "block";
+}
+</script>
 
-  <div class="responsive">
-    <div class="gallery">
-      <a target="_blank" href="ny1.jpg">
-        <img src="NY1.jpg" alt="NYC" width="600" height="400">
-      </a>
-      <p>
-      <div class="desc">New York 2019</div>
-      </p>
-    </div>
-  </div>
-  <div class="responsive">
-    <div class="gallery">
-      <a target="_blank" href="arizona.jpg">
-        <img src="arizona.jpg" alt="NYC" width="600" height="400">
-      </a>
-      <p>
-      <div class="desc">Arizona 2019</div>
-      </p>
-    </div>
-  </div>
-  <div class="responsive">
-    <div class="gallery">
-      <a href="mississippi.html">
-        <img src="biloxi.jpg" alt="NYC" width="600" height="400">
-      </a>
-      <p>
-      <div class="desc">Mississippi 2020</div>
-      </p>
-    </div>
-  </div>
 </body>
 </html>
