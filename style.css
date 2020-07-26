@@ -10,6 +10,7 @@
 .navbar-style
 {
   box-shadow: 0 5px 10px #FFFFFF;
+  text-transform: uppercase;
 }
 .logo
 {
@@ -19,4 +20,9 @@
 .icon-bar
 {
   background: black;
+}
+
+li a
+{
+  color: #333;
 }
