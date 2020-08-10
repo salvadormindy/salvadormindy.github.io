@@ -17,9 +17,7 @@
 }
 .container {
   position:absolute;
-  left: 50%;
-  top: 50%;
-  transform: translateX(-50%) translateY(-50%);
+  
 }
 
 li {
@@ -30,7 +28,7 @@ li a {
     text-decoration: none;
     display: inline-block;
     color: #000000;
-    font-family: sans-serif;
+    font-family: arial;
     text-transform: uppercase;
     font-weight: lighter;
     font-size: 20px;
@@ -52,7 +50,7 @@ li a {
 }
 a.button
 {
-    margin: 30px 10px;
+    margin: 30px 20px;
 }
 a:hover {
   color: #000000 !important;
